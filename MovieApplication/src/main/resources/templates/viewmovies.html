@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Movies</title>
+<style type="text/css">
+body {
+	background-color:aqua;
+	color: red;
+}
+
+table{
+background-color: black;
+	color: red;
+   height:50px;
+     width:200px;
+	border-collapse: collapse;
+	border-color:white;
+	
+}
+td{
+padding: 50px;
+}
+#bu1{
+height: 50px;
+width: 100px;
+background-color: black;
+color: red;
+}
+
+</style>
+</head>
+<body>
+	<table style="width: 50%" border="5px">
+		<tr>
+		  	<td>Id</td>
+		  	<td>Name</td>
+		  	<td>Link</td>
+		  	<td>Genre</td>
+		  	<td>Cast</td>
+		  	<td>Director</td>
+		</tr>
+		<tr th:each="movielist:${movielist}">
+			<td th:text="${movielist.id}"></td>
+			<td th:text="${movielist.name}"></td>
+			<td th:utext="${movielist.link}"></td>
+			<td th:text="${movielist.genre}"></td>
+			<td th:text="${movielist.cast}"></td>
+			<td th:text="${movielist.director}"></td>
+		</tr>
+	</table>
+	<br><br> 
+	<form action="return-adminhome">
+	<a>
+		<input id="bu1" type="submit" value="ADMIN HOME">
+	</a>
+	</form>
+
+</body>
+</html>

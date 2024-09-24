@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="https://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylessheet" type="text/css" th:href="@{/css/mystyle.css}">
+
+<style type="text/css">
+body {
+	background-color:black;
+	color:red;
+}
+
+.container{
+/* 	border:1px solid white; */
+	margin:90px;
+	padding: 40px;
+	background-color: black;
+	text-align: center;	
+}
+#button1,#button2{
+height: 50px;
+width: 100px;
+background-color: black;
+color: red;
+}
+
+
+</style>
+<title>MOVIEFLIX</title>
+</head>
+<body>
+	<div class="container">
+	<h1>Welcome to MovieFlix</h1><br>
+	<form action="map-sign" method="get">
+	<button id="button1" type="submit">Sign Up</button>
+	</form>
+	<br><br>
+	<br>
+	<form action="map-log" method="get">
+	<button id="button2" type="submit">Login</button>
+	</form>
+	</div>
+	
+</body>
+</html>

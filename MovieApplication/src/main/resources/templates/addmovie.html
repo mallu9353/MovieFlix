@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<style type="text/css">
+body {
+	background-color: black;
+	color: red;
+}
+.container{
+	margin:90px;
+	padding: 40px;
+	background-color: black;
+	text-align: center;	
+}
+#bu1{
+height: 50px;
+width: 100px;
+background-color: black;
+color: red;
+}
+</style>
+<body>
+<div class="container">
+	<form action="add-movie" method="post">
+	<label>Enter the Movie details:</label>
+	<br><br>
+	<label>Movie:</label>
+	<input type="text" name="name">
+	<br><br>
+	<label>Link:</label>
+	<input type="text" name="link">
+	<br><br>
+	<label>Genre:</label>
+	<input type="radio" name="genre" value="Action" >Action
+	<input type="radio" name="genre" value="Sci-Fi">Sci-Fi
+	<input type="radio" name="genre" value="Horror">Horror
+	<input type="radio" name="genre" value="Comedy">Comedy
+	<br><br>
+	<label>Cast:</label>
+	<input type="text" name="cast">
+	<br><br>
+	<label>Director:</label>
+	<input type="text" name="director">
+	<br><br>
+	
+	<input id="bu1" type="submit" value="ADD MOVIE">
+	
+	</form></div>
+
+</body>
+</html>

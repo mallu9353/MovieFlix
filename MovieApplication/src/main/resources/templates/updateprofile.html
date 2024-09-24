@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>UpdateProfile</title>
+<style type="text/css">
+body {
+	background-color:black;
+	color:red;
+}
+
+.container{
+	
+	margin:50px;
+	padding: 50px;
+	background-color: black;
+	text-align: center;	
+}
+#bu1{
+height: 50px;
+width: 100px;
+background-color: black;
+color: red;
+}
+
+
+</style>
+</head>
+<body>
+<div class="container">
+<form action="go-update" method="post">
+	<label>Enter your details:</label>
+	<br>
+	<br>
+	
+	<label>Name:</label>
+	<input type="text" name="name">
+	<br><br>
+	<label>Email Id:</label>
+	<input type="text" name="email">
+	<br><br>
+	<label>Password:</label>
+	<input type="password" name="password">
+	<br><br>
+	<label>Gender:</label>
+	M <input type="radio" name="gender" value="Male">
+	F<input type="radio" name="gender" value="Female">
+	O<input type="radio" name="gender" value="Other">
+	<br><br>
+	<label>Phone:</label>
+	<input type="number" name="phone">
+	<br><br>
+	<label>Address:</label>
+	<textarea  name="address"></textarea>
+	<br><br>
+	
+	<input id="bu1" type="submit" value="UPDATE">
+</form>
+</div>
+</body>
+</html>

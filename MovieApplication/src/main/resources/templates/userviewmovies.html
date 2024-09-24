@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<style type="text/css">
+body {
+	background-color: black;
+	color: red;
+}
+.movie-grid{
+   	display: grid;
+   	grid-template-columns:repeat(auto-fill,minmax(300px,1fr));
+	gap:10px;
+}
+.movie-item{
+padding:5px;
+border:1px solid black;
+border-radius:1px;
+text-align: center;
+
+
+}
+.movie-item iframe{
+width: 100%;
+height: 200px;
+
+}
+#id1{
+text-align: center;
+}
+
+
+</style>
+</head>
+<body>
+<h1 id="id1">MOVIEFLIX</h1>
+<div class="movie-grid">
+	<div th:each="userlist:${userlist}" class="movie-item">
+		<h3 th:text="${userlist.name}">Movie Name</h3>
+		<div th:utext="${userlist.link}"></div>
+	</div>	
+</div>	
+		
+		
+		 
+	
+	
+	</table>
+
+</body>
+</html>

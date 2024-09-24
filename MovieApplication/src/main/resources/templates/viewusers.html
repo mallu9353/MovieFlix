@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Users</title>
+<style type="text/css">
+body {
+	background-color: black;
+	color: red;
+}
+table{
+background-color: black;
+	color: red;
+   height:50px;
+     width:200px;
+	border-collapse: collapse;
+	border-color: white;
+	
+}
+td{
+padding: 50px;
+}
+
+</style>
+</head>
+<body>
+	<table border="5px">
+		<tr>
+			<td>Id</td>
+			<td>Name</td>
+			<td>Email</td>
+			<td>Gender</td>
+			<td>Phone</td>
+			<td>Address</td>
+		</tr>
+		<tr th:each="users:${users}">
+			<td th:text="${users.id}"></td>
+			<td th:text="${users.name}"></td>
+			<td th:text="${users.email}"></td>
+			<td th:text="${users.gender}"></td>
+			<td th:text="${users.phone}"></td>
+			<td th:text="${users.address}"></td>
+		</tr>
+	
+	</table>
+</body>
+</html>
